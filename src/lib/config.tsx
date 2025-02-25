@@ -11,7 +11,7 @@ import {
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "AI Agent SDK",
+  name: "Pi Manager",
   description: "Create AI Agents with just a few lines of code.",
   cta: "Get Started",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
@@ -76,10 +76,11 @@ export const siteConfig = {
   ],
   pricing: [
     {
-      name: "Basic",
-      price: { monthly: "$9", yearly: "$99" },
+      name: "Free",
+      popular: true,
+      price: { monthly: "$0", yearly: "$0" },
       frequency: { monthly: "month", yearly: "year" },
-      description: "Perfect for individuals and small projects.",
+      description: "Perfect for individuals and students with small projects.",
       features: [
         "100 AI generations per month",
         "Basic text-to-image conversion",
@@ -116,7 +117,7 @@ export const siteConfig = {
         "On-premises deployment option",
         "Advanced analytics and reporting",
       ],
-      popular: true,
+
       cta: "Get Started",
     },
   ],
@@ -136,7 +137,7 @@ export const siteConfig = {
       { text: "Contact", url: "#" },
     ],
     bottomText: "All rights reserved.",
-    brandText: "AGENT SDK",
+    brandText: "PI MANAGER",
   },
 
   testimonials: [

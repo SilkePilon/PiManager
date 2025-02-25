@@ -43,7 +43,7 @@ const Tabs = ({ activeTab, setActiveTab, className, children }: TabsProps) => {
 
 const TabsList = ({ children }: TabsListProps) => {
   return (
-    <div className="relative flex w-fit items-center rounded-full border p-1.5">
+    <div className="relative flex w-fit items-center rounded-xl border p-1.5">
       {children}
     </div>
   );
@@ -63,7 +63,7 @@ const TabsTrigger = ({
       {isActive && (
         <motion.div
           layoutId="active-tab"
-          className="absolute inset-0 rounded-full bg-accent"
+          className="absolute inset-0 rounded-xl bg-accent"
           transition={{
             duration: 0.2,
             type: "spring",
@@ -143,7 +143,12 @@ function PricingTier({
           <ul className="space-y-2">
             {tier.features.map((feature, featureIndex) => (
               <li key={featureIndex} className="flex items-center">
-                <Check className="mr-2 size-4 text-green-500" />
+                <Badge
+                  variant={"secondary"}
+                  className="mr-2 w-8 h-8 rounded-xl"
+                >
+                  <Check className="mr-2 size-4 text-green-500" />
+                </Badge>
                 <span className="font-medium">{feature}</span>
               </li>
             ))}
