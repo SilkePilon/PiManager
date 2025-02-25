@@ -199,7 +199,7 @@ export async function Examples() {
 
   return (
     <Section id="examples">
-      <div className="border-x border-t">
+      <div className="border-x  border-t">
         <FeatureSelector features={features} />
       </div>
     </Section>

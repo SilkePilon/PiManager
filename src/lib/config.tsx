@@ -29,11 +29,12 @@ export const siteConfig = {
     instagram: "https://instagram.com/aiagentsdk",
   },
   hero: {
-    title: "AI Agent SDK",
+    title: "Pi Manager",
     description:
       "Create powerful AI agent workflows with just a few lines of code, enabling complex task automation and decision-making processes.",
     cta: "Get Started",
-    ctaDescription: "Available for all major programming languages",
+    ctaLink: "/get-started",
+    ctaDescription: "Available for Raspberry Pi 5, 4 and 3",
   },
   features: [
     {

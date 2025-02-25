@@ -27,7 +27,7 @@ export function Header() {
             href="#"
             className={cn(
               buttonVariants({ variant: "default" }),
-              "h-8 text-primary-foreground rounded-lg group tracking-tight font-medium"
+              "h-8 text-primary-foreground bg-white hover:bg-gray-400 rounded-lg group tracking-tight font-medium"
             )}
           >
             {siteConfig.cta}

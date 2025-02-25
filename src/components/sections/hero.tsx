@@ -98,10 +98,10 @@ function HeroCTA() {
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
         <Link
-          href="/download"
+          href={siteConfig.hero.ctaLink}
           className={cn(
             buttonVariants({ variant: "default" }),
-            "w-full sm:w-auto text-background flex gap-2 rounded-lg"
+            "w-full bg-white hover:bg-gray-400 sm:w-auto text-background flex gap-2 rounded-lg"
           )}
         >
           <Icons.logo className="h-6 w-6" />
